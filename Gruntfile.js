@@ -17,9 +17,7 @@ module.exports = function (grunt) {
 				dest: 'assets/js/all.js',
 			},
 		},
-	});
-
-	grunt.initConfig({
+		
 		uglify: {
 			options: {
 				mangle: false
@@ -28,11 +26,9 @@ module.exports = function (grunt) {
 				files: {
 					'assets/js/all.min.js': ['assets/js/all.js'],
 				}
-			}
-		}
-	});
-
-	grunt.initConfig({
+			},
+		},
+		
 		imagemin: {
 			static: {
 				options: {
@@ -44,10 +40,8 @@ module.exports = function (grunt) {
 					'assets/images/logo.min.png': ['assets/images/logo.png'],
 				}
 			},
-		}
-	});
-
-	grunt.initConfig({
+		},
+		
 		cssmin: {
 			options: {
 				mergeIntoShorthands: false,
@@ -57,7 +51,8 @@ module.exports = function (grunt) {
 				files: {
 					'assets/css/admin-colors.min.css': ['assets/css/admin-colors.css']
 				}
-			}
-		}
+			,}
+		},
+		
 	});
 }
